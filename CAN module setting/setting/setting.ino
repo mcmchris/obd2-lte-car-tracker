@@ -76,7 +76,7 @@ void setup()
 {
     Serial.begin(9600);
     while(!Serial.available());
-    can.begin(0, 0, 9600);      // tx, rx
+    can.begin(TX, RX, 9600);      // tx, rx
 
     set_mask_filt();
 
