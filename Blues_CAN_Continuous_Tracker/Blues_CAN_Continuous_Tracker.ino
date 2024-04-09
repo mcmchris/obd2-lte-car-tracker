@@ -4,7 +4,8 @@
    @Author: Christopher Mendez | MCMCHRIS
    @Date: 04/09/2024 (mm/dd/yy)
    @Brief:
-   This firmware runs on a XIAO ESP32C3 microcontroller, it communicates with the vehicle using a CAN-bus transceiver and sends the read data to the cloud using a Notecard LTE. 
+   This firmware runs on a XIAO ESP32C3 microcontroller, it communicates with the vehicle using a CAN-bus transceiver 
+   and sends the read data to the Cloud using a Notecard LTE. 
 
 */
 
