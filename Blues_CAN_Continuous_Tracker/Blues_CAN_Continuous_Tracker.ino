@@ -117,7 +117,15 @@ void setup() {
     delay(100);
   }
 
-  can.begin(0, 0, 9600);  // tx, rx
+  can.begin(TX, RX, 9600);  // ESP32C3 -> TX = D6, RX = D7
+
+  bool set = 0;
+
+  while (set != 1) {
+    set = can.baudRate(0);
+    delay(200);
+    digitalWrite(LED_A, !digitalRead(LED_A));
+  }
 
   notecard.setDebugOutputStream(serialDebug);
   notecard.begin();
