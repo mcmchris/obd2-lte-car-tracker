@@ -14,3 +14,4 @@ LTE Car Tracker and engine status monitoring connected to the Cloud.
 
 - [Serial CAN Module Firmware](https://github.com/Longan-Labs/Serial_CAN_Bus)
 - [Longan CAN Module Documentation](https://docs.longan-labs.cc/1030001/)
+- [XIAO ESP32C3 Documentation](https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/)
