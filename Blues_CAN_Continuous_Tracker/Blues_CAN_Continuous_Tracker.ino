@@ -15,7 +15,7 @@
 
 #define serialDebug Serial
 
-#define PRODUCT_UID "com.hotmail.mcmchris:chevy_tracker"
+#define PRODUCT_UID "***************************"
 
 #define productUID PRODUCT_UID
 
@@ -250,8 +250,8 @@ void configureHub() {
  */
 void configureGPS() {
   J *req = notecard.newRequest("card.location.mode");
-  JAddStringToObject(req, "mode", "continuous");  // maintain the GPS turned on. (we don't need to save energy)
-  //JAddNumberToObject(req, "seconds", 5);
+  JAddStringToObject(req, "mode", "periodic");  // maintain gps off until the accelerometer detects movement
+  JAddNumberToObject(req, "seconds", 10);
   notecard.sendRequestWithRetry(req, 5);  // 5 seconds
 }
 
