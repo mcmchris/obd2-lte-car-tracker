@@ -1,7 +1,7 @@
 # OBD-II LTE Car Tracker
 LTE Car Tracker and engine status monitoring connected to the Cloud.
 
-![Thumbnail]()
+![Thumbnail](/portada.png)
 
 ## Materials
 
