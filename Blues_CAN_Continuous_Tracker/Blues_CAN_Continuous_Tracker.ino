@@ -250,8 +250,8 @@ void configureHub() {
  */
 void configureGPS() {
   J *req = notecard.newRequest("card.location.mode");
-  JAddStringToObject(req, "mode", "periodic");  // maintain gps off until the accelerometer detects movement
-  JAddNumberToObject(req, "seconds", 10);
+  JAddStringToObject(req, "mode", "continuous");  // maintain gps on
+  //JAddNumberToObject(req, "seconds", 10);
   notecard.sendRequestWithRetry(req, 5);  // 5 seconds
 }
 
